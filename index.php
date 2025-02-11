@@ -52,8 +52,9 @@ if (isset($_GET['delete'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ô Chữ Kambria</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <title>Quản trò Ô Chữ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/css/bootstrap.min.css" integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/5.3.3/materia/bootstrap.min.css" integrity="sha512-2S9Do+uTmZmmJpdmAcOKdUrK/YslcvAuRfIF2ws8+BW9AvZXMRZM+o8Wq+PZrfISD6ZlIaeCWWZAdeprXIoYuQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script>
         function validateWord(word) {
             return word
@@ -74,7 +75,7 @@ if (isset($_GET['delete'])) {
     </script>
 </head>
 <body class="container mt-4">
-    <h2 class="mb-4">Quản trị Ô Chữ Kambria</h2>
+    <h2 class="mb-4">Quản trò Ô Chữ</h2>
     <?php if (isset($_GET['error']) && $_GET['error'] === 'duplicate'): ?>
         <div class="alert alert-danger">Từ này bị trùng!</div>
     <?php endif; ?>
